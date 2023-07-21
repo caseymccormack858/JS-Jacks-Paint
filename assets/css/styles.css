@@ -23,7 +23,9 @@ body{
   .floatLeft {
     float: left
   }
-
+  .price{
+    font: 140px Arial, sans-serif; 
+  }
   #color-price{
     font-size: 1em; 
     font-family: Arial, Helvetica, sans-serif;
