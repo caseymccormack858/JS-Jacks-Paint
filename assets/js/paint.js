@@ -26,7 +26,8 @@ function removeOpacity(event) {
     let color = document.getElementById('color-name');
         color.textContent = ''; 
 
-    event.preventDefault();    
+    event.preventDefault(); 
+   
 }
 
 function getProductInfo(paintColor) {
@@ -34,34 +35,43 @@ function getProductInfo(paintColor) {
     let colorName;  
     
     switch (paintColor) {
-        case 'pn1':           
-            // set variables for price and color name and invoke a function to update the price     
-            break;           
-        case 'pn2':
-            // set variables for price and color name and invoke a function to update the price    
-            break;            
-        case 'pn3':
-            // set variables for price and color name and invoke a function to update the price  
-            break;   
-        case 'pn4':
-            // set variables for price and color name and invoke a function to update the price  
-            break;   
-        case 'pn5':
-            // set variables for price and color name and invoke a function to update the price       
-            break;   
-        case 'pn6':
-            // set variables for price and color name and invoke a function to update the price        
-            break;   
-        case 'pn7':
-            // set variables for price and color name and invoke a function to update the price 
-            break;   
-        case 'pn8':
-            // set variables for price and color name and invoke a function to update the price   
-            break;   
-        case 'pn9':
-            // set variables for price and color name and invoke a function to update the price 
-            break;   
-          default:              
+        case 'pn1':
+            colorName = 'Lime Green';
+            price = 14.99;
+            break;
+          case 'pn2':
+            colorName = 'Medium Brown';
+            price = 11.14;
+            break;
+          case 'pn3':
+            colorName = 'Royal Blue';
+            price = 22.99;
+            break;
+          case 'pn4':
+            colorName = 'Solid Black';
+            price = 4.99;
+            break;
+          case 'pn5':
+            colorName = 'Solid Cyan';
+            price = 8.22;
+            break;
+          case 'pn6':
+            colorName = 'Solid Purple';
+            price = 11.99;
+            break;
+          case 'pn7':
+            colorName = 'Solid Red';
+            price = 13.42;
+            break;
+          case 'pn8':
+            colorName = 'Solid White';
+            price = 21.98;
+            break;
+          case 'pn9':
+            colorName = 'Solid Yellow';
+            price = 14.99;
+            break;
+          default:
     }
 
     function updatePrice(colorName, price)
