@@ -73,14 +73,16 @@ function getProductInfo(paintColor) {
             break;
           default:
     }
-
-    function updatePrice(colorName, price)
+        updatedPrice(colorName, price);
+}
+    
+function updatePrice(colorName, price) {
     {       
-        let colorPrice = // select element with corresponding id
+        let colorPrice = document.getElementById('color-price');// select element with corresponding id
         // display price
         
-        let color = // select element with corresponding id
+        let color = document.getElementById('color-name');// select element with corresponding id
         //display color name
     }
-    
-}
+
+    configureListeners();
