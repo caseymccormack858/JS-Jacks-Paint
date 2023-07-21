@@ -11,15 +11,16 @@ function configureListeners() {
 }
 
 function addOpacity(event) {
-    // add appropriate CSS class
-    event.target.classList.add('opacity');
+    if (!this.classList.contains('dim')){
+        this.classList.add('dim')
+    }    
     getProductInfo(event.target.id);     
 }
 
 function removeOpacity(event) {
-   //remove appropriate CSS class
-   event.target.classList.remove('opacity');
-
+    if (this.classList.contains('dim')){
+        this.classList.remove('dim');
+    }
     let element = document.getElementById('color-price');
         element.textContent = '';
         
